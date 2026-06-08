@@ -1,18 +1,24 @@
-# Engineering Cipher
+# 工程密码工具
 
-A single-page cryptography course project for experimenting with classical, symmetric, asymmetric, and hash algorithms in the browser.
+这是一个工程概论课程项目：多算法加解密网页。
 
-## Usage
+页面以单文件 HTML 实现，可在浏览器中运行，用于学习和观察古典密码、对称密码、公钥密码、哈希算法的加解密流程与中间计算过程。
 
-Open `cipher.html` directly in a browser.
+## 使用方式
 
-All operations run locally in the browser. Inputs, keys, and intermediate values are not sent to a server.
+直接用浏览器打开：
 
-## Included Algorithms
+```text
+cipher.html
+```
 
-- Caesar cipher
-- Vigenere cipher
-- Affine cipher
+所有计算都在浏览器本地完成，输入内容、密钥和中间过程不会发送到服务器。
+
+## 支持算法
+
+- 凯撒密码
+- 维吉尼亚密码
+- 仿射密码
 - DES
 - AES-GCM
 - SM4
@@ -22,6 +28,15 @@ All operations run locally in the browser. Inputs, keys, and intermediate values
 - MD5
 - SM3
 
-## Notes
+## 功能特点
 
-The page is intended for course learning and algorithm process observation. Some default parameters are small teaching values and should not be used for real security.
+- 支持加密、解密和摘要计算
+- 左侧可切换不同算法方案
+- 参数区可设置密钥、模数、指数、随机数等
+- 输出区展示加解密结果
+- 中间过程区展示关键计算步骤，便于理解算法流程
+- 每种算法都有流程设计说明，适合课程复习和答辩展示
+
+## 注意事项
+
+本项目用于课程学习和算法过程观察。部分默认参数是便于演示的小参数，不应直接用于真实安全场景。
